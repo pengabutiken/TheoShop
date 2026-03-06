@@ -8,3 +8,6 @@ export const products: Product[]=[
 export function getAllProducts(): Product[]{
     return products;
 }
+export function getProdbyID(id:number){
+    return products.find(products=> products.id===id);
+}
